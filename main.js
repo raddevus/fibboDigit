@@ -2,9 +2,9 @@ let fibboDigit = (fIdx) => {
     let first = 0;
     let second = 1;
     let fibboSeries = `${first}, `;
-    if (fIdx <= 1) return first;
+    if (fIdx <= 1) { console.log(fibboSeries); return first;}
     fibboSeries += `${second}, `
-    if (fIdx == 2) return second;
+    if (fIdx == 2) { console.log(fibboSeries); return second; }
     let loopCount = 2;
     let retVal = 0;
     
